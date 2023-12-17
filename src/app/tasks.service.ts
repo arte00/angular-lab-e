@@ -13,7 +13,7 @@ export class TasksService {
   constructor(private http: HttpClient) { }
 
   public index(archived = false): Observable<Task[]> {
-    return this.http.get<Task[]>(this.baseUrl, { observe: 'response'})
+    return this.http.get<Task[]>(`${this.baseUrl}/?archived=${archived}&_sort=id&_order=desc`, { observe: 'response'})
       .pipe(
         map(response => response.body as Task[]),
       )

@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="page-header">
+    Archive
+  </h1>
+  <div class="content">
+    <ng-container *ngFor="let task of tasks">
+      <div class="task-container">
+        <div class="task-header">
+          <div class="task-title">{{ task.title }}</div>
+          <div class="task-deadline">{{ task.deadline | date:'dd-MM-yyyy' }}</div>
+        </div>
+        <div class="task-completed">
+          <button class="delete-button" (click)="delete(task)">Delete</button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,5 +1,9 @@
 <header>
-  <h1>Backend-Based Task Manager</h1>
+  <h1>Task Manager</h1>
+  <nav style="display: flex; flex-direction: row; gap: 1rem;">
+    <a routerLink="/tasks" class="nav-link" routerLinkActive="active">Tasks</a>
+    <a routerLink="/archive" class="nav-link" routerLinkActive="active">Archive</a>
+  </nav>
 </header>
 
 <div class="router-outlet">

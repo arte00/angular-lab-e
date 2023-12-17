@@ -8,7 +8,7 @@
   gap: .9rem;
 }
 
-.task-container, .add-task-container {
+.task-container {
   border: 1px solid black;
   border-radius: 4px;
   padding: 1rem;
@@ -17,32 +17,7 @@
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-between;
-}
-
-.task-container-completed {
-  border: 1px solid grey;
-  border-radius: 4px;
-  padding: 1rem;
-  background-color: white;
-  color: grey;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: line-through;
-}
-
-.task-container, .task-container-completed {
   align-items: center;
-}
-
-.add-task-container {
-  align-items: center;
-  gap: 1rem;
-}
-
-.submit-button {
-  width: 6rem;
-  height: 2rem;
 }
 
 .task-header {
@@ -70,13 +45,6 @@
   margin-left: 1rem;
 }
 
-input[type="checkbox"] {
-  cursor: pointer;
-  width: 1.2rem;
-  height: 1.2rem;
+.delete-button {
+  height: 2rem;
 }
-
-.archive-button {
-  height: 4rem;
-}
-

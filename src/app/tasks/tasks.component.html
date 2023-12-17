@@ -1,15 +1,34 @@
 <div class="container">
+  <h1 class="page-header">
+    Tasks
+  </h1>
   <div class="content">
-    <ng-container *ngFor="let task of tasks | async">
-      <div class="task-container">
+    <form>
+      <div class="add-task-container">
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" name="title" placeholder="Enter title..." style="flex: 1" [(ngModel)]="newTask.title">
+
+        <label for="deadlineInput">Deadline:</label>
+        <input type="date" id="deadlineInput" name="deadline" [(ngModel)]="newTask.deadline">
+
+        <button class="submit-button" (click)="addTask()">
+          Submit
+        </button>
+      </div>
+    </form>
+    <ng-container *ngFor="let task of tasks">
+      <div [ngClass]="task.completed ? 'task-container-completed' : 'task-container'">
         <div class="task-header">
           <div class="task-title">{{ task.title }}</div>
           <div class="task-deadline">{{ task.deadline | date:'dd-MM-yyyy' }}</div>
         </div>
         <div class="task-completed">
-          <input type="checkbox" [(ngModel)]="task.completed">
+          <input type="checkbox" [(ngModel)]="task.completed" (change)="handleChange(task)">
         </div>
       </div>
     </ng-container>
+    <button class="archive-button" (click)="archiveCompleted()">
+      Archive Completed
+    </button>
   </div>
 </div>
