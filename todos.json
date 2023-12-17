@@ -1,0 +1,32 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "deadline": "1900-01-01",
+      "completed": false,
+      "archived": false
+    },
+    {
+      "id": 2,
+      "title": "Hello Again World",
+      "deadline": "2000-01-01",
+      "completed": false,
+      "archived": false
+    },
+    {
+      "title": "Zadanie typu testowego",
+      "deadline": "2024-01-01",
+      "completed": false,
+      "archived": false,
+      "id": 3
+    },
+    {
+      "title": "Test endpointów POST i PUT",
+      "deadline": "2024-01-01",
+      "completed": true,
+      "archived": true,
+      "id": 4
+    }
+  ]
+}

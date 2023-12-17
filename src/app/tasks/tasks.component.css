@@ -1,0 +1,53 @@
+.container {
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+
+.task-container {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: white;
+  color: darkslategray;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.task-deadline {
+  background-color: #FF6347;
+  color: white;
+  padding: .5rem .8rem;
+  border-radius: .4rem;
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+
+.task-completed {
+  margin-left: 1rem;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+

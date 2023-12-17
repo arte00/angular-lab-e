@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="content">
+    <ng-container *ngFor="let task of tasks | async">
+      <div class="task-container">
+        <div class="task-header">
+          <div class="task-title">{{ task.title }}</div>
+          <div class="task-deadline">{{ task.deadline | date:'dd-MM-yyyy' }}</div>
+        </div>
+        <div class="task-completed">
+          <input type="checkbox" [(ngModel)]="task.completed">
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
