@@ -5,30 +5,8 @@
 .content {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: .9rem;
-}
-
-.task-container, .add-task-container {
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 1rem;
-  background-color: white;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: space-between;
-}
-
-.task-container-completed {
-  border: 1px solid grey;
-  border-radius: 4px;
-  padding: 1rem;
-  background-color: white;
-  color: grey;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: line-through;
 }
 
 .task-container, .task-container-completed {
@@ -42,7 +20,7 @@
 
 .submit-button {
   width: 6rem;
-  height: 2rem;
+  height: 100%;
 }
 
 .task-header {
@@ -57,26 +35,32 @@
   line-height: 2.2rem;
 }
 
-.task-deadline {
-  background-color: #FF6347;
-  color: white;
-  padding: .5rem .8rem;
-  border-radius: .4rem;
-  font-size: 1.2rem;
-  margin-left: auto;
-}
-
 .task-completed {
   margin-left: 1rem;
 }
 
-input[type="checkbox"] {
-  cursor: pointer;
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
 .archive-button {
   height: 4rem;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+mat-form-field {
+  flex: 1
+}
+
+.button-container {
+  display: flex;
+  align-items: center
+}
+
+.task-card-completed {
+  background-color: slategray;
+  text-decoration: line-through;
 }
 

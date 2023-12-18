@@ -1,10 +1,23 @@
-<header>
-  <h1>Task Manager</h1>
-  <nav style="display: flex; flex-direction: row; gap: 1rem;">
-    <a routerLink="/tasks" class="nav-link" routerLinkActive="active">Tasks</a>
-    <a routerLink="/archive" class="nav-link" routerLinkActive="active">Archive</a>
-  </nav>
-</header>
+<mat-toolbar color="primary">
+  <span>Backend-Based To-Do List</span>
+  <span class="spacer" style="flex: 1"></span>
+  <div class="chips-container" style="display: flex; align-items: center; gap: 1rem">
+    <a mat-chip-option
+       color="accent"
+       routerLink="/tasks"
+       routerLinkActive="active"
+       #tasksActive="routerLinkActive"
+       style="text-decoration: none"
+       [selected]="tasksActive.isActive">Tasks</a>
+    <a mat-chip-option
+       color="accent"
+       routerLink="/archive"
+       routerLinkActive="active"
+       #archiveActive="routerLinkActive"
+       style="text-decoration: none"
+       [selected]="archiveActive.isActive">Archived</a>
+  </div>
+</mat-toolbar>
 
 <div class="router-outlet">
   <router-outlet></router-outlet>

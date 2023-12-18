@@ -1,13 +1,1 @@
-header, footer {
-  background: #335d9d;
-  padding: 0.8rem;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
 
-.nav-link {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}

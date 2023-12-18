@@ -65,6 +65,14 @@ export class TasksComponent implements OnInit {
       .subscribe();
   }
 
+  public canAddTask(): boolean {
+    return this.isTaskValid(this.newTask);
+  }
+
+  public canArchiveCompleted(): boolean {
+    return this.tasks.some(task => task.completed);
+  }
+
   private isTaskValid(task: Task): boolean {
     return task.title !== undefined && task.title !== '' && task.deadline !== undefined;
   }

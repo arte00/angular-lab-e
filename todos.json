@@ -10,9 +10,23 @@
     {
       "title": "Zadanie typu testowego",
       "deadline": "2024-01-01",
-      "completed": false,
+      "completed": true,
       "archived": false,
       "id": 3
+    },
+    {
+      "title": "Archiwizowane 1",
+      "deadline": "2023-12-20",
+      "archived": true,
+      "completed": true,
+      "id": 4
+    },
+    {
+      "title": "Archiwizowane 2",
+      "deadline": "2023-12-21",
+      "archived": true,
+      "completed": true,
+      "id": 5
     }
   ]
 }
